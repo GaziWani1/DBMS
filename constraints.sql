@@ -73,4 +73,4 @@ CREATE VIEW e2 as
    SELECT e.e_name , e.e_salary  , d.d_name 
        FROM employee e JOIN dept d ON e.dept_id = d.d_id;
   
-SELECT * FROM e2 WHERE e_name LIKE ('A_%');
+SELECT * FROM e2 WHERE e_name LIKE ('A_%')
