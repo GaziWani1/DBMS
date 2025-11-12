@@ -41,23 +41,34 @@ INSERT INTO employee VALUES
                      ('Sarfaraz Dar' , 60000 , '11-02-2025' , 'saf@dar.com' , 4)
 
 SELECT * FROM dept
-
 SELECT * FROM employee
 
 -- INNER JOIN RETUEN ALL THE MATCHING TUPLES
 SELECT e.e_name , e.e_salary  , d.d_name 
        FROM employee e JOIN dept d ON e.dept_id = d.d_id;
 
+SELECT * FROM dept
+SELECT * FROM employee
+
 -- LEFT JOIN
 SELECT e.e_name , e.e_salary  , d.d_name 
        FROM employee e LEFT JOIN dept d ON e.dept_id = d.d_id;
+
+SELECT * FROM dept
+SELECT * FROM employee
 
 -- RIGHT JOIN
 SELECT e.e_name , e.e_salary  , d.d_name 
        FROM employee e RIGHT JOIN dept d ON e.dept_id = d.d_id;
 
+SELECT * FROM dept
+SELECT * FROM employee
+
 -- FULL JOIN 
 SELECT * FROM employee e FULL JOIN dept d on e.dept_id = d.d_id;
+
+SELECT * FROM dept
+SELECT * FROM employee
 
 -- CROSS JOIN
 SELECT * FROM employee , dept
